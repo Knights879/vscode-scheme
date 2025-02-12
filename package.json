@@ -6,13 +6,13 @@
         "scheme",
         "syntax"
     ],
-    "version": "0.4.0",
-    "publisher": "sjhuangx",
+    "version": "0.5.0",
+    "publisher": "hardy-ethan",
     "icon": "images/lambda.png",
     "main": "./out/src/schemeMain",
     "license": "MIT",
     "author": {
-        "name": "Allen Huang"
+        "name": "Allen Huang & Ethan Hardy"
     },
     "engines": {
         "vscode": "^1.11.0"
@@ -26,12 +26,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/sjhuangx/vscode-scheme.git"
+        "url": "https://github.com/hardy-ethan/vscode-scheme.git"
     },
     "bugs": {
-        "url": "https://github.com/sjhuangx/vscode-scheme/issues"
+        "url": "https://github.com/hardy-ethan/vscode-scheme/issues"
     },
-    "homepage": "https://github.com/sjhuangx/vscode-scheme",
+    "homepage": "https://github.com/hardy-ethan/vscode-scheme",
     "contributes": {
         "languages": [
             {
