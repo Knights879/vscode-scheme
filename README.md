@@ -1,23 +1,27 @@
 # Scheme Language Support for Visual Studio Code
 
-This extension add Scheme language support to VS Code.
+This extension adds Scheme language support to VS Code.
 
 ## Features
+
 * Syntax Coloring
 
-![](https://raw.githubusercontent.com/hardy-ethan/vscode-scheme/master/images/syntax.png)
+![Example Image](https://raw.githubusercontent.com/hardy-ethan/vscode-scheme/master/images/syntax.png)
 
 * Snippets
 
-![](https://raw.githubusercontent.com/hardy-ethan/vscode-scheme/master/images/snippets.gif)
+![Example Gif](https://raw.githubusercontent.com/hardy-ethan/vscode-scheme/master/images/snippets.gif)
 
-support following snippets: cond, define, if, lambda, let, let1, set!.
+Supports the following snippets: `cond`, `define`, `if`, `lambda`, `let`, `let1`, and `set!`.
+
+## About
+
+I forked this repo to learn how to make language extensions for VS Code.
 
 ## Credits
-Forked from https://github.com/tinyjiahao/vscode-scheme (because it appears to be dead)
 
-This extension use a file that egrachev's sublime-scheme to enable syntax on vscode.
+Forked from [hardy-ethan's vscode-scheme](https://github.com/hardy-ethan/vscode-scheme) (which is a fork from the [original by tinyjiahao](https://github.com/tinyjiahao/vscode-scheme)).
 
-[https://github.com/egrachev/sublime-scheme/blob/master/Scheme.tmLanguage](https://github.com/egrachev/sublime-scheme/blob/master/Scheme.tmLanguage)
+This extension uses [a file from egrachev's sublime-scheme](https://github.com/egrachev/sublime-scheme/blob/master/Scheme.tmLanguage) to enable syntax on vscode.
 
 **Enjoy!**
