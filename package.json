@@ -1,86 +1,85 @@
 {
-    "name": "vscode-scheme",
-    "displayName": "vscode-scheme",
-    "description": "Scheme language support for VSCode",
-    "keywords": [
-        "scheme",
-        "syntax"
-    ],
-    "version": "0.5.0",
-    "publisher": "hardy-ethan",
-    "icon": "images/lambda.png",
-    "main": "./out/src/schemeMain",
-    "license": "MIT",
-    "author": {
-        "name": "Allen Huang & Ethan Hardy"
-    },
-    "engines": {
-        "vscode": "^1.11.0"
-    },
-    "categories": [
-        "Languages",
-        "Snippets"
-    ],
-    "activationEvents": [
-        "onLanguage:scheme"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hardy-ethan/vscode-scheme.git"
-    },
-    "bugs": {
-        "url": "https://github.com/hardy-ethan/vscode-scheme/issues"
-    },
-    "homepage": "https://github.com/hardy-ethan/vscode-scheme",
-    "contributes": {
-        "languages": [
-            {
-                "id": "scheme",
-                "aliases": [
-                    "Scheme",
-                    "scheme"
-                ],
-                "extensions": [
-                    ".scm",
-                    ".ss",
-                    ".sch",
-                    ".rkt"
-                ],
-                "configuration": "./scheme.configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "scheme",
-                "scopeName": "source.scheme",
-                "path": "./syntaxes/scheme.tmLanguage"
-            },
-            {
-                "scopeName": "markdown.scheme.codeblock",
-                "path": "./syntaxes/scheme.markdown.tmLanguage.json",
-                "injectTo": [
-                    "text.html.markdown"
-                ]
-            }
-        ],
-        "snippets": [
-            {
-                "language": "scheme",
-                "path": "./snippets/scheme.json"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^5.7.3",
-        "vscode": "^1.1.37",
-        "mocha": "^11.1.0",
-        "@types/node": "^22.13.1",
-        "@types/mocha": "^10.0.10"
-    }
+   "name": "vscode-scheme",
+   "displayName": "vscode-scheme",
+   "description": "Scheme language support for VSCode",
+   "keywords": [
+      "scheme",
+      "syntax"
+   ],
+   "version": "0.5.0",
+   "publisher": "Knights879",
+   "icon": "images/lambda.png",
+   "main": "./out/src/schemeMain",
+   "license": "MIT",
+   "author": {
+      "name": "Allen Huang & Ethan Hardy & Austin Traub"
+   },
+   "engines": {
+      "vscode": "^1.11.0"
+   },
+   "categories": [
+      "Programming Languages",
+      "Snippets"
+   ],
+   "activationEvents": [],
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Knights879/vscode-scheme.git"
+   },
+   "bugs": {
+      "url": "https://github.com/Knights879/vscode-scheme/issues"
+   },
+   "homepage": "https://github.com/Knights879/vscode-scheme",
+   "contributes": {
+      "languages": [
+         {
+            "id": "scheme",
+            "aliases": [
+               "Scheme",
+               "scheme"
+            ],
+            "extensions": [
+               ".scm",
+               ".ss",
+               ".sch",
+               ".rkt"
+            ],
+            "configuration": "./scheme.configuration.json"
+         }
+      ],
+      "grammars": [
+         {
+            "language": "scheme",
+            "scopeName": "source.scheme",
+            "path": "./syntaxes/scheme.tmLanguage"
+         },
+         {
+            "scopeName": "markdown.scheme.codeblock",
+            "path": "./syntaxes/scheme.markdown.tmLanguage.json",
+            "injectTo": [
+               "text.html.markdown"
+            ]
+         }
+      ],
+      "snippets": [
+         {
+            "language": "scheme",
+            "path": "./snippets/scheme.json"
+         }
+      ]
+   },
+   "scripts": {
+      "vscode:prepublish": "tsc -p ./",
+      "compile": "tsc -watch -p ./",
+      "postinstall": "node ./node_modules/vscode/bin/install",
+      "test": "node ./node_modules/vscode/bin/test"
+   },
+   "devDependencies": {
+      "@types/mocha": "^10.0.10",
+      "@types/node": "^22.13.1",
+      "@types/vscode": "^1.103.0",
+      "mocha": "^11.1.0",
+      "typescript": "^5.7.3",
+      "vscode": "^1.1.37"
+   }
 }
