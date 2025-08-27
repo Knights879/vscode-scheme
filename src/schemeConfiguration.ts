@@ -1,9 +1,9 @@
 import * as vscode from "vscode";
 
 export const configuration: vscode.LanguageConfiguration = {
-   wordPattern: /[\w\-\.:<>\*][\w\d\.\\/\-\?<>\*!]+/,
+   wordPattern: /[^\s()\[\]{}"';]+/,
    indentationRules: {
-      decreaseIndentPattern: undefined,
-      increaseIndentPattern: /^\s*\(.*[^)]\s*$/,
+      decreaseIndentPattern: /^\s*\)/,
+      increaseIndentPattern: /^\s*\(.*[^)]\s*$/
    },
 };
