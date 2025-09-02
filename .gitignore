@@ -5,3 +5,4 @@ node_modules
 yarn.lock
 vscode-lang-exts.code-workspace
 test.scm
+test2.scm
